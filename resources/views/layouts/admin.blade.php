@@ -7,9 +7,8 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Local Assets via Vite -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
@@ -42,7 +41,7 @@
             
             <div class="d-flex align-items-center ms-auto text-light">
                 <div class="dropdown">
-                    <a href="#" class="text-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                    <a href="#" class="text-light text-decoration-none dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-person-circle me-1"></i> {{ auth()->user()->name }}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow border-0">
@@ -143,8 +142,7 @@
         @endif
     </div>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toast Auto-Show Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var toastElList = [].slice.call(document.querySelectorAll('.toast'))

@@ -26,7 +26,7 @@
                         <h4 class="fw-bold mb-0 text-dark">Rp {{ number_format($totalIncome, 0, ',', '.') }}</h4>
                         <small class="text-muted">Dari pesanan selesai</small>
                     </div>
-                    <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                    <div class="bg-primary bg-opacity-10 text-primary d-flex justify-content-center align-items-center rounded-circle" style="width: 56px; height: 56px;">
                         <i class="bi bi-wallet2 fs-4"></i>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                         <h4 class="fw-bold mb-0 text-dark">{{ $totalOrders }} <small class="text-muted fs-6">Transaksi</small></h4>
                         <small class="text-warning fw-semibold">{{ $pendingOrders }} menunggu pembayaran</small>
                     </div>
-                    <div class="bg-success bg-opacity-10 p-3 rounded-circle text-success">
+                    <div class="bg-success bg-opacity-10 text-success d-flex justify-content-center align-items-center rounded-circle" style="width: 56px; height: 56px;">
                         <i class="bi bi-cart-check fs-4"></i>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <h4 class="fw-bold mb-0 text-dark">{{ $totalProducts }} <small class="text-muted fs-6">Item</small></h4>
                         <small class="text-muted">{{ $totalCategories }} kategori</small>
                     </div>
-                    <div class="bg-info bg-opacity-10 p-3 rounded-circle text-info">
+                    <div class="bg-info bg-opacity-10 text-info d-flex justify-content-center align-items-center rounded-circle" style="width: 56px; height: 56px;">
                         <i class="bi bi-box-seam fs-4"></i>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         <h4 class="fw-bold mb-0 text-dark">{{ $totalCustomers }} <small class="text-muted fs-6">User</small></h4>
                         <small class="text-primary fw-semibold">{{ $processingOrders }} pesanan diproses</small>
                     </div>
-                    <div class="bg-warning bg-opacity-10 p-3 rounded-circle text-warning">
+                    <div class="bg-warning bg-opacity-10 text-warning d-flex justify-content-center align-items-center rounded-circle" style="width: 56px; height: 56px;">
                         <i class="bi bi-people fs-4"></i>
                     </div>
                 </div>
